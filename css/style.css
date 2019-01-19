@@ -63,7 +63,7 @@ button {
     cursor: pointer;
 }
 .template-width {
-    max-width: 1170px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 * {
@@ -81,9 +81,146 @@ button {
     clear: both;
 }
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', arial, sans-serif;
-    font-size: 16px;
+    background-color: #485563;
 }
-
-
+.btn {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: #e8e8e8;
+    font-family: Montserrat, arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.33px;
+    margin: 0 auto;
+}
+.btn--light {
+    border: 1px solid #f2f2f2;
+    background-color: transparent;
+}
 /*-----------------------Конец "Общие стили"------------------------*/
+
+/*-----------------------НАЧАЛО "HEADER"------------------------*/
+.header {
+    width: 100%;
+}
+.header__wrap {
+    background: url("../img/bckg_01.jpg") center center no-repeat;
+    padding: 32px 216px;
+}
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.logo {
+    width: 82px;
+    height: 30px;
+}
+.logo__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/logo.png") center center no-repeat;
+}
+.header__menu-name {
+    display: inline-block;
+    vertical-align: middle;
+    color: #e8e8e8;
+    font-family: Montserrat, arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: -0.35px;
+    margin-right: 14px;
+}
+.burger {
+    display: inline-block;
+    position: relative;
+    width: 21px;
+    height: 15px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.burger__line {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+.burger__line:first-child {
+    top: 0;
+    transition: 0.2s;
+}
+.burger__line:nth-child(2),
+.burger__line:nth-child(3) {
+    top: 42%;
+    /*transition: 0.2s;*/
+}
+.burger__line:last-child {
+    bottom: 0;
+    transition: 0.2s;
+}
+.burger:hover .burger__line:first-child {
+    width: 30%;
+}
+.burger:hover .burger__line:nth-child(2),
+.burger:hover .burger__line:nth-child(3) {
+    width: 65%;
+}
+.header__menu-checkbox:checked ~.burger .burger__line:first-child,
+.header__menu-checkbox:checked ~.burger .burger__line:last-child {
+    display: none;
+}
+.header__menu-checkbox:checked ~.burger:hover .burger__line:nth-child(2),
+.header__menu-checkbox:checked ~.burger:hover .burger__line:nth-child(3) {
+    width: 100%;
+}
+.header__menu-checkbox:checked ~.burger .burger__line:nth-child(2){
+    /*position: absolute;*/
+    top: 7px;
+    transform: rotate(35deg);
+    transition: 0.2s;
+}
+.header__menu-checkbox:checked ~.burger .burger__line:nth-child(3) {
+    top: 7px;
+    transform: rotate(-35deg);
+    transition: 0.2s;
+}
+.top-nav {
+    display: none;
+}
+.header__content {
+    margin: 200px 0 267px;
+    text-align: center;
+}
+.header__title {
+    color: #e8e8e8;
+    font-family: Montserrat, arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    /*line-height: 40px;*/
+    letter-spacing: -2.2px;
+}
+.header__descr {
+    width: 627px;
+    color: #e8e8e8;
+    font-family: "Open Sans", arial, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    /* Text style for "E, nean vu" */
+    letter-spacing: -0.8px;
+    margin: 27px auto 31px;
+}
+.header__link {
+    width: 126px;
+}
+/*-----------------------КОНЕЦ "HEADER"------------------------*/
