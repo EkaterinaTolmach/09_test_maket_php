@@ -326,3 +326,26 @@ body {
     line-height: 22px;
 }
 /*-----------------------КОНЕЦ "SERVICES"------------------------*/
+
+/*-----------------------НАЧАЛО "WORKS"------------------------*/
+.works__wrap {
+    padding-bottom: 0;
+    background-color: #ffffff;
+}
+.works__name {
+    margin-bottom: 76px;
+}
+.works__gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.works__item {
+    max-width: 320px;
+    min-width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+/*-----------------------КОНЕЦ "WORKS"------------------------*/
