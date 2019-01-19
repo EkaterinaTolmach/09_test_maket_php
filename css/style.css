@@ -354,6 +354,7 @@ body {
     background-color: #ffffff;
     padding-right: 216px;
     padding-left: 216px;
+    padding-bottom: 116px;
 }
 .clients__name {
     margin-bottom: 67px;
@@ -414,5 +415,67 @@ body {
     color: #29323c;
     font-family: 'Montserrat', arial, sans-serif;
     font-size: 13px;
+}
+/* Dots */
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -46px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+}
+.slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    content: '';
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #2b3746;
+    opacity: 0.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+    background-color: #2b3746;
 }
 /*-----------------------КОНЕЦ "CLIENTS"------------------------*/
