@@ -4,7 +4,7 @@
     font-weight: 400;
 }
 @font-face{
-    font-family: 'Open Sans Extrabold';
+    font-family: 'Open Sans - Extrabold';
     src: url('../fonts/OpenSansExtrabold.woff'), url('../fonts/OpenSansExtrabold.woff2');
     font-weight: 400;
 }
@@ -93,7 +93,7 @@ body {
     justify-content: center;
     border-radius: 20px;
     color: #e8e8e8;
-    font-family: Montserrat, arial, sans-serif;
+    font-family: 'Montserrat', arial, sans-serif;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
@@ -128,7 +128,6 @@ body {
     color: #29323c;
     font-family: "Open Sans - Extrabold", arial, sans-serif;
     font-size: 26px;
-    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: -0.65px;
     margin-bottom: 4px;
@@ -168,7 +167,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     color: #e8e8e8;
-    font-family: Montserrat, arial, sans-serif;
+    font-family: 'Montserrat', arial, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: -0.35px;
@@ -237,7 +236,7 @@ body {
 }
 .header__title {
     color: #e8e8e8;
-    font-family: Montserrat, arial, sans-serif;
+    font-family: 'Montserrat', arial, sans-serif;
     font-size: 36px;
     font-weight: 700;
     /*line-height: 40px;*/
@@ -311,7 +310,7 @@ body {
 }
 .services__item-title {
     color: #29323c;
-    font-family: Montserrat, arial, sans-serif;
+    font-family: 'Montserrat', arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -349,3 +348,71 @@ body {
     overflow: hidden;
 }
 /*-----------------------КОНЕЦ "WORKS"------------------------*/
+
+/*-----------------------НАЧАЛО "CLIENTS"------------------------*/
+.clients__wrap {
+    background-color: #ffffff;
+    padding-right: 216px;
+    padding-left: 216px;
+}
+.clients__name {
+    margin-bottom: 67px;
+}
+.clients__testimonials {
+    margin: 0 auto;
+}
+.testimonials-slider {
+    max-width: 1160px;
+}
+.testimonials-slider__text {
+    height: 69px;
+    color: #2b3746;
+    font-family: "Open Sans", arial, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 74px;
+}
+.testimonials-slider__text::after {
+    position: absolute;
+    bottom: -38px;
+    display: block;
+    content: "”";
+    width: 16px;
+    height: 11px;
+    opacity: 0.5;
+    color: #2b3746;
+    font-family: 'Montserrat', arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    left: 49%;
+}
+.testimonials-slider__author {
+    margin: 0 auto;
+    max-width: 180px;
+}
+.testimonials-slider__author-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.testimonials-slider__author-name {
+    text-align: center;
+    color: #29323c;
+    font-family: 'Montserrat', arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px 0 3px;
+}
+.testimonials-slider__author-position {
+    text-align: center;
+    opacity: 0.8;
+    color: #29323c;
+    font-family: 'Montserrat', arial, sans-serif;
+    font-size: 13px;
+}
+/*-----------------------КОНЕЦ "CLIENTS"------------------------*/
