@@ -104,12 +104,46 @@ body {
     border: 1px solid #f2f2f2;
     background-color: transparent;
 }
+.section {
+    padding-top: 93px;
+    padding-bottom: 93px;
+}
+.section__name {
+    text-align: center;
+    position: relative;
+}
+.section__name::after {
+    display: block;
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #29323c;
+    opacity: 0.8;
+    position: absolute;
+    bottom: -17px;
+    left: 48%;
+
+}
+.section__title {
+    color: #29323c;
+    font-family: "Open Sans - Extrabold", arial, sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.65px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+.section__descr {
+    opacity: 0.8;
+    color: #29323c;
+    font-family: "Open Sans", arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
 /*-----------------------Конец "Общие стили"------------------------*/
 
 /*-----------------------НАЧАЛО "HEADER"------------------------*/
-.header {
-    width: 100%;
-}
 .header__wrap {
     background: url("../img/bckg_01.jpg") center center no-repeat;
     padding: 32px 216px;
@@ -224,3 +258,71 @@ body {
     width: 126px;
 }
 /*-----------------------КОНЕЦ "HEADER"------------------------*/
+
+/*-----------------------НАЧАЛО "SERVICES"------------------------*/
+.services__wrap {
+    padding-left: 216px;
+    padding-right: 216px;
+    background-color: #f5f5f5;
+}
+.services__name {
+    margin-bottom: 76px;
+}
+.services__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.services__item {
+    max-width: 269px;
+    text-align: center;
+}
+.services__tizer {
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle 60px at center, #485563 0%, #29323c 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.services__tizer-laptop {
+    width: 60px;
+    height: 41px;
+    background: url('../img/css_sprites.png') -373px -55px;
+}
+.services__tizer-customize {
+    width: 42px;
+    height: 45px;
+    background: url('../img/css_sprites.png') -367px -127px;
+}
+.services__tizer-seo {
+    width: 55px;
+    height: 55px;
+    background: url('../img/css_sprites.png') -292px -127px;
+}
+.services__tizer-love {
+    width: 61px;
+    height: 52px;
+    background: url('../img/css_sprites.png') -292px -55px;
+}
+.services__item-title {
+    color: #29323c;
+    font-family: Montserrat, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.4px;
+    margin: 35px 0 17px;
+}
+.services__item-descr {
+    opacity: 0.8;
+    color: #29323c;
+    font-family: "Open Sans", arial, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+/*-----------------------КОНЕЦ "SERVICES"------------------------*/
