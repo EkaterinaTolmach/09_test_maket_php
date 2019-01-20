@@ -436,7 +436,7 @@
     <section class="contacts">
         <div class="contacts__wrap template-width">
             <div class="contacts__map">
-                <iframe src="https://yandex.ru/map-widget/v1/63/irkutsk/?ll=104.255868%2C52.279760&z=17.6" width="800" frameborder="1" allowfullscreen="true"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/63/irkutsk/?ll=104.255868%2C52.279760&z=17.6" width="800" height="100%" allowfullscreen="true"></iframe>
                 <div class="contacts__map-marker"></div>
             </div>
             <div class="contacts__submit-form">
@@ -453,11 +453,11 @@
                         <label class="submit-form__label" for="phone-field">Phone</label>
                         <input id="phone-field" class="submit-form__field" type="tel" name="user_phone">
                     </div>
-                    <div class="submit-form__box">
-                        <label class="submit-form__label" for="message-field">Message</label>
-                        <textarea id="message-field" class="submit-form__field" name="username"></textarea>
+                    <div class="submit-form__box submit-form__box--textarea">
+                        <label class="submit-form__label submit-form__label--textarea" for="message-field">Message</label>
+                        <textarea id="message-field" class="submit-form__field submit-form__field--textarea" name="username"></textarea>
                     </div>
-                    <button type="submit" name="submit" value="send">Submit</button>
+                    <button class="submit-form__btn" type="submit" name="submit" value="send">Submit</button>
                 </form>
             </div>
         </div>
