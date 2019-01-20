@@ -580,3 +580,41 @@ body {
     max-width: 200px;
 }
 /*-----------------------КОНЕЦ "OUR-TEAM"------------------------*/
+
+/*-----------------------НАЧАЛО "BRANDS"------------------------*/
+.brands__wrap {
+    padding: 42px 265px;
+    background-color: #f5f5f5;
+}
+.brands__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-coca-cola {
+    width: 135px;
+    height: 44px;
+    background: url('../img/css_sprites.png') -10px -135px;
+}
+.brand-dropbox {
+    width: 154px;
+    height: 42px;
+    background: url('../img/css_sprites.png') -106px -69px;
+}
+.brand-intel {
+    width: 96px;
+    height: 64px;
+    background: url('../img/css_sprites.png') -10px -199px;
+}
+.brand-zendesk {
+    width: 166px;
+    height: 39px;
+    background: url('../img/css_sprites.png') -106px -10px;
+}
+.brand-nokia {
+    width: 150px;
+    height: 25px;
+    background: url('../img/css_sprites.png') -292px -10px;
+}
+/*-----------------------КОНЕЦ "BRANDS"------------------------*/
