@@ -433,6 +433,35 @@
             </div>
         </div>
     </section>
+    <section class="contacts">
+        <div class="contacts__wrap template-width">
+            <div class="contacts__map">
+                <iframe src="https://yandex.ru/map-widget/v1/63/irkutsk/?ll=104.255868%2C52.279760&z=17.6" width="800" frameborder="1" allowfullscreen="true"></iframe>
+                <div class="contacts__map-marker"></div>
+            </div>
+            <div class="contacts__submit-form">
+                <form class="submit-form" action="#" method="post">
+                    <div class="submit-form__box">
+                        <label class="submit-form__label" for="name-field">Name</label>
+                        <input id="name-field" class="submit-form__field" type="text" name="user_name">
+                    </div>
+                    <div class="submit-form__box">
+                        <label class="submit-form__label" for="email-field">Email</label>
+                        <input id="email-field" class="submit-form__field" type="email" name="user_email">
+                    </div>
+                    <div class="submit-form__box">
+                        <label class="submit-form__label" for="phone-field">Phone</label>
+                        <input id="phone-field" class="submit-form__field" type="tel" name="user_phone">
+                    </div>
+                    <div class="submit-form__box">
+                        <label class="submit-form__label" for="message-field">Message</label>
+                        <textarea id="message-field" class="submit-form__field" name="username"></textarea>
+                    </div>
+                    <button type="submit" name="submit" value="send">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="plagins/slick/slick.min.js"></script>
