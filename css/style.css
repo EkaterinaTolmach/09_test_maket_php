@@ -415,13 +415,19 @@ footer {
     min-width: 200px;
     height: 200px;
     overflow: hidden;
-
 }
 .works__img {
     transition: transform 0.2s linear;
 }
 .works__item:hover .works__img {
     transform: scale(1.05,1.05);
+}
+.works__more {
+    display: none;
+}
+.works__more-btn {
+    width: 175px;
+    margin: 30px auto 0;
 }
 /*-----------------------КОНЕЦ "WORKS"------------------------*/
 
@@ -952,8 +958,85 @@ footer {
         padding-right: 30px;
     }
 }
+@media all and (max-width: 1135px) {
+    .services__list {
+        justify-content: center;
+    }
+    .services__item:first-child,
+    .services__item:nth-child(2) {
+        margin-right: 15px;
+    }
+    .services__item:last-child {
+        margin-top: 15px;
+    }
+}
+@media all and (max-width: 896px) {
+    .services__item:first-child {
+        margin-right: 30px;
+    }
+    .services__item:nth-child(3) {
+        margin-right: 30px;
+        margin-top: 15px;
+    }
+    .services__item:nth-child(2) {
+        margin-right: 0;
+    }
+}
+@media all and (max-width: 768px) {
+    .works__wrap {
+        padding-bottom: 50px;
+    }
+    .works__item:nth-child(11),
+    .works__item:nth-child(12),
+    .works__item:nth-child(13),
+    .works__item:nth-child(14),
+    .works__item:nth-child(15) {
+        display: none;
+    }
+    .works__more {
+        display: block;
+    }
+}
 @media all and (max-width: 640px) {
+    .template-width {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .header__content {
         margin: 100px 0 100px;
+    }
+    .services__item {
+        max-width: 200px;
+    }
+    .works__gallery {
+        display: block;
+    }
+    .works__item {
+        display: block;
+        margin: 0 auto;
+    }
+    .works__item:nth-child(6),
+    .works__item:nth-child(7),
+    .works__item:nth-child(8),
+    .works__item:nth-child(9),
+    .works__item:nth-child(10) {
+        display: none;
+    }
+}
+@media all and (max-width: 480px) {
+    .services__list {
+        display: block;
+    }
+    .services__item:last-child,
+    .services__item:nth-child(2),
+    .services__item:nth-child(3) {
+        max-width: 100%;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+    .services__item:first-child {
+        max-width: 100%;
+        margin-top: 0;
+        margin-right: 0;
     }
 }
