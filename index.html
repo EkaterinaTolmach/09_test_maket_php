@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="plagins/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<be0b0640-aca0-4d8e-9c5f-122d99031b48>" type="text/javascript"></script>
 </head>
 <body>
 <header class="header">
@@ -436,9 +437,12 @@
     <section class="contacts">
         <div class="contacts__wrap template-width">
             <h2 class="visually-hidden">Contacts</h2>
-            <div class="contacts__map">
-                <iframe src="https://yandex.ru/map-widget/v1/63/irkutsk/?ll=104.255868%2C52.279760&z=17.6" width="800" height="100%" allowfullscreen="true"></iframe>
-                <div class="contacts__map-marker"></div>
+            <div id="map" class="contacts__map">
+                <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A52e6d8520cc41beabab9d8bbcbdb88191442c0f366f6094f1a66b17f3a2cf354&amp;width=800&amp;height=650&amp;lang=ru_RU&amp;scroll=true"></script>-->
+                <!--<div class="contacts__map-marker"></div>-->
+                <!--<div id="map"></div>-->
+
+
             </div>
             <div class="contacts__submit-form">
                 <form class="submit-form" action="#" method="post">
