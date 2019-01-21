@@ -449,7 +449,7 @@ footer {
     max-width: 1160px;
 }
 .testimonials-slider__text {
-    height: 69px;
+    /*height: 69px;*/
     color: #2b3746;
     font-family: "Open Sans", arial, sans-serif;
     font-size: 16px;
@@ -566,6 +566,7 @@ footer {
 /*-----------------------НАЧАЛО "OUR-TEAM"------------------------*/
 .our-team {
     background: url("../img/bckg_02.jpg") center center no-repeat;
+    background-size: cover;
 }
 .our-team__wrap {
     padding-bottom: 100px;
@@ -612,7 +613,7 @@ footer {
     line-height: 24px;
 }
 .our-team__item-social {
-    margin: 18px 0 31px;
+    padding: 18px 0 31px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -957,6 +958,12 @@ footer {
         padding-left: 30px;
         padding-right: 30px;
     }
+    .our-team__item:nth-child(3) {
+        margin-right: 0;
+    }
+    .our-team__item:last-child {
+        margin-top: 20px;
+    }
 }
 @media all and (max-width: 1135px) {
     .services__list {
@@ -970,6 +977,15 @@ footer {
         margin-top: 15px;
     }
 }
+@media all and (max-width: 925px) {
+    .our-team__item:nth-child(3) {
+        margin-right: 28px;
+        margin-top: 20px;
+    }
+    .our-team__item:nth-child(2) {
+        margin-right: 0;
+    }
+}
 @media all and (max-width: 896px) {
     .services__item:first-child {
         margin-right: 30px;
@@ -980,6 +996,9 @@ footer {
     }
     .services__item:nth-child(2) {
         margin-right: 0;
+    }
+    .brand-nokia {
+        display: none;
     }
 }
 @media all and (max-width: 768px) {
@@ -1002,6 +1021,10 @@ footer {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     .header__content {
         margin: 100px 0 100px;
     }
@@ -1021,6 +1044,54 @@ footer {
     .works__item:nth-child(9),
     .works__item:nth-child(10) {
         display: none;
+    }
+    .brands__items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .brand-nokia {
+        display: block;
+        align-self: flex-end;
+    }
+    .brands__item {
+        margin-right: 30px;
+    }
+    .brands__item:last-child,
+    .brands__item:nth-child(4){
+        margin-top: 15px;
+    }
+}
+@media all and (max-width: 597px) {
+    .our-team__list {
+        display: block;
+    }
+    .our-team__item:nth-child(2),
+    .our-team__item:nth-child(3),
+    .our-team__item:last-child{
+        margin: 15px auto 0;
+    }
+    .our-team__item:first-child {
+        margin: 0 auto;
+    }
+    .our-team__full-link {
+        margin-top: 50px;
+    }
+}
+@media all and (max-width: 504px) {
+    .services__list {
+        display: block;
+    }
+    .services__item:last-child,
+    .services__item:nth-child(2),
+    .services__item:nth-child(3) {
+        max-width: 100%;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+    .services__item:first-child {
+        max-width: 100%;
+        margin-top: 0;
+        margin-right: 0;
     }
 }
 @media all and (max-width: 480px) {
