@@ -190,6 +190,9 @@ body {
     height: 100%;
     background: url("../img/logo.png") center center no-repeat;
 }
+.header__menu {
+    position: relative;
+}
 .header__menu-name {
     display: inline-block;
     vertical-align: middle;
@@ -255,7 +258,32 @@ body {
     transition: 0.2s;
 }
 .top-nav {
-    display: none;
+    /*display: none;*/
+    position: absolute;
+    right: 0;
+    top: 25px;
+    background-color: #485563;
+    width: 200px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+.top-nav__item {
+    padding-left: 15px;
+}
+.top-nav__link {
+    display: block;
+    color: #e8e8e8;
+    font-family: 'Montserrat', arial, sans-serif;
+    font-size: 14px;
+    line-height: 36px;
+    transition: text-shadow 0.2s linear;
+}
+.top-nav__item:hover .top-nav__link {
+    text-shadow: 1px 1px 2px #e8e8e8;
+}
+.header__menu-checkbox:checked ~.top-nav {
+    opacity: 1;
 }
 .header__content {
     margin: 200px 0 267px;
