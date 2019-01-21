@@ -67,9 +67,10 @@ button {
     cursor: pointer;
 }
 .template-width {
-    max-width: 1600px;
+    max-width: 1170px;
     margin: 0 auto;
 }
+
 * {
     /*outline: 1px solid red;*/
 }
@@ -89,6 +90,12 @@ body {
     padding: 0;
     font-family: 'Open Sans', arial, sans-serif;
     background-color: #485563;
+}
+header,
+main,
+footer {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .btn {
     display: flex;
@@ -170,9 +177,13 @@ body {
 /*-----------------------Конец "Общие стили"------------------------*/
 
 /*-----------------------НАЧАЛО "HEADER"------------------------*/
-.header__wrap {
+.header {
+    max-width: 1600px;
     background: url("../img/bckg_01.jpg") center center no-repeat;
-    padding: 31px 216px;
+}
+.header__wrap {
+    margin: 0 auto;
+    padding: 31px 0;
 }
 .header__nav {
     display: flex;
@@ -314,10 +325,11 @@ body {
 /*-----------------------КОНЕЦ "HEADER"------------------------*/
 
 /*-----------------------НАЧАЛО "SERVICES"------------------------*/
-.services__wrap {
-    padding-left: 216px;
-    padding-right: 216px;
+.services {
     background-color: #f5f5f5;
+}
+.services__wrap {
+    margin: 0 auto;
 }
 .services__name {
     margin-bottom: 76px;
@@ -382,9 +394,11 @@ body {
 /*-----------------------КОНЕЦ "SERVICES"------------------------*/
 
 /*-----------------------НАЧАЛО "WORKS"------------------------*/
+.works {
+    background-color: #ffffff;
+}
 .works__wrap {
     padding-bottom: 0;
-    background-color: #ffffff;
 }
 .works__name {
     margin-bottom: 76px;
@@ -412,11 +426,12 @@ body {
 /*-----------------------КОНЕЦ "WORKS"------------------------*/
 
 /*-----------------------НАЧАЛО "CLIENTS"------------------------*/
-.clients__wrap {
+.clients {
     background-color: #ffffff;
-    padding-right: 216px;
-    padding-left: 216px;
+}
+.clients__wrap {
     padding-bottom: 116px;
+    margin: 0 auto;
 }
 .clients__name {
     margin-bottom: 67px;
@@ -543,11 +558,12 @@ body {
 /*-----------------------КОНЕЦ "CLIENTS"------------------------*/
 
 /*-----------------------НАЧАЛО "OUR-TEAM"------------------------*/
-.our-team__wrap {
-    padding-right: 216px;
-    padding-left: 216px;
-    padding-bottom: 100px;
+.our-team {
     background: url("../img/bckg_02.jpg") center center no-repeat;
+}
+.our-team__wrap {
+    padding-bottom: 100px;
+    margin: 0 auto;
 }
 .our-team__name {
     margin-bottom: 100px;
@@ -640,9 +656,12 @@ body {
 /*-----------------------КОНЕЦ "OUR-TEAM"------------------------*/
 
 /*-----------------------НАЧАЛО "BRANDS"------------------------*/
-.brands__wrap {
-    padding: 42px 265px;
+.brands {
     background-color: #f5f5f5;
+}
+.brands__wrap {
+    padding: 42px 0;
+    margin: 0 auto;
 }
 .brands__items {
     display: flex;
@@ -678,10 +697,11 @@ body {
 /*-----------------------КОНЕЦ "BRANDS"------------------------*/
 
 /*-----------------------НАЧАЛО "PRICING"------------------------*/
-.pricing__wrap {
-    padding-left: 216px;
-    padding-right: 216px;
+.pricing {
     background-color: #ffffff;
+}
+.pricing__wrap {
+    margin: 0 auto;
 }
 .pricing__name {
     margin-bottom: 97px;
@@ -841,9 +861,12 @@ body {
 /*-----------------------КОНЕЦ "CONTACTS"------------------------*/
 
 /*-----------------------НАЧАЛО "FOOTER"------------------------*/
-.footer__wrap {
+.footer {
     background-color: #f5f5f5;
-    padding: 45px 216px 50px;
+}
+.footer__wrap {
+    margin: 0 auto;
+    padding: 45px 0 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -924,8 +947,9 @@ body {
 
 /*-----------------------НАЧАЛО АДАПТИВА------------------------*/
 @media all and (max-width: 1170px) {
-    .header__wrap {
-        padding: 31px 30px;
+    .template-width {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 @media all and (max-width: 640px) {
