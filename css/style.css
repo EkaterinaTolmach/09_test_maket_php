@@ -172,7 +172,7 @@ body {
 /*-----------------------НАЧАЛО "HEADER"------------------------*/
 .header__wrap {
     background: url("../img/bckg_01.jpg") center center no-repeat;
-    padding: 32px 216px;
+    padding: 31px 216px;
 }
 .header__nav {
     display: flex;
@@ -298,7 +298,7 @@ body {
     letter-spacing: -2.2px;
 }
 .header__descr {
-    width: 627px;
+    max-width: 627px;
     color: #e8e8e8;
     font-family: "Open Sans", arial, sans-serif;
     font-size: 17px;
@@ -921,3 +921,15 @@ body {
     transform: translateY(-3px);
 }
 /*-----------------------КОНЕЦ "FOOTER"------------------------*/
+
+/*-----------------------НАЧАЛО АДАПТИВА------------------------*/
+@media all and (max-width: 1170px) {
+    .header__wrap {
+        padding: 31px 30px;
+    }
+}
+@media all and (max-width: 640px) {
+    .header__content {
+        margin: 100px 0 100px;
+    }
+}
