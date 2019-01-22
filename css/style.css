@@ -280,6 +280,8 @@ footer {
     border-radius: 3px;
     opacity: 0;
     transition: opacity 0.2s linear;
+    padding: 15px 0;
+    box-shadow: 5px 5px 5px rgba(39, 46, 53, 1);
 }
 .top-nav__item {
     padding-left: 15px;
@@ -418,10 +420,11 @@ footer {
     height: 200px;
     overflow: hidden;
 }
-.works__img {
+.works__item img {
     transition: transform 0.2s linear;
+    width: 101%;
 }
-.works__item:hover .works__img {
+.works__item:hover img {
     transform: scale(1.05,1.05);
 }
 .works__more {
@@ -973,6 +976,19 @@ footer {
 /*-----------------------КОНЕЦ "FOOTER"------------------------*/
 
 /*-----------------------НАЧАЛО АДАПТИВА------------------------*/
+@media all and (max-width: 1599px) {
+    .works__gallery {
+        display: flex;
+        justify-content: flex-start;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+@media all and (max-width: 1279px) {
+    .works__gallery {
+        max-width: 960px;
+    }
+}
 @media all and (max-width: 1170px) {
     .template-width {
         padding-left: 30px;
@@ -1001,6 +1017,11 @@ footer {
     }
     .services__item:last-child {
         margin-top: 15px;
+    }
+}
+@media all and (max-width: 959px) {
+    .works__gallery {
+        max-width: 640px;
     }
 }
 @media all and (max-width: 925px) {
@@ -1069,6 +1090,9 @@ footer {
     .section {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+    .top-nav {
+        width: 100%;
     }
     .header__content {
         margin: 100px 0 100px;
@@ -1203,9 +1227,7 @@ footer {
     }
 }
 @media all and (max-width: 320px) {
-    .top-nav {
-        width: 100%;
-    }
+
     .works__more-btn {
         width: 200px;
     }
