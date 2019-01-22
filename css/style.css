@@ -201,7 +201,8 @@ footer {
     display: block;
     width: 100%;
     height: 100%;
-    background: url("../img/logo.png") center center no-repeat;
+    /*background: url("../img/logo.png") center center no-repeat;*/
+    background: url('../img/css_sprites.png') -10px -278px;
 }
 .header__menu {
     /*position: relative;*/
@@ -346,7 +347,7 @@ footer {
     flex-wrap: wrap;
 }
 .services__item {
-    max-width: 269px;
+    max-width: 270px;
     text-align: center;
 }
 .services__tizer {
@@ -468,7 +469,7 @@ footer {
     bottom: -38px;
     display: block;
     content: "”";
-    width: 16px;
+    width: 25px;
     height: 11px;
     opacity: 0.5;
     color: #2b3746;
@@ -476,7 +477,7 @@ footer {
     font-size: 40px;
     font-weight: 700;
     font-style: italic;
-    left: 49%;
+    left: calc(50% - 12px);
 }
 .testimonials-slider__author {
     margin: 0 auto;
@@ -754,7 +755,7 @@ footer {
     margin-top: 0;
     /*height: 530px;*/
     /*max-width: 400px;*/
-    border-top: 5px solid #485563;
+    /*border-top: 5px solid #485563;*/
     /*transition: all 0.2s;*/
 }
 .pricing__item-title {
@@ -762,7 +763,7 @@ footer {
     padding: 24px 0 28px;
     font-family: "Montserrat", arial, sans-serif;
     text-align: center;
-
+    border-top: 5px solid transparent;
 }
 .pricing__item-name {
     color: #485563;
@@ -805,7 +806,8 @@ footer {
 }
 .pricing__item:hover .pricing__item-title {
     padding: 54px 0 28px;
-    transition: padding 0.2s linear;
+    transition: padding, border 0.2s linear;
+    border-top: 5px solid #485563;
 }
 .pricing__item:hover .pricing__item-title .pricing__item-name,
 .pricing__item:hover .pricing__item-title .pricing__item-price {
@@ -912,7 +914,7 @@ footer {
     flex-wrap: nowrap;
 }
 .logo__link--dark {
-    background: url("../img/logo-dark.png") center center no-repeat;
+    background: url('../img/css_sprites.png') -104px -279px;
 }
 .footer__copy {
     color: #29323c;
@@ -994,9 +996,15 @@ footer {
         padding-left: 30px;
         padding-right: 30px;
     }
-    .our-team__item:nth-child(3) {
+    .our-team__list {
+        max-width: 568px;
+        margin: 0 auto;
+    }
+    .our-team__item:nth-child(2),
+    .our-team__item:last-child {
         margin-right: 0;
     }
+    .our-team__item:nth-child(3),
     .our-team__item:last-child {
         margin-top: 20px;
     }
@@ -1007,16 +1015,43 @@ footer {
         padding: 22px 30px 36px;
     }
 }
-@media all and (max-width: 1135px) {
+@media all and (max-width: 1136px) {
     .services__list {
         justify-content: center;
+        max-width: 555px;
+        margin: 0 auto;
     }
     .services__item:first-child,
-    .services__item:nth-child(2) {
+    .services__item:nth-child(3) {
         margin-right: 15px;
     }
+    .services__item:nth-child(3),
     .services__item:last-child {
         margin-top: 15px;
+    }
+}
+@media all and (max-width: 1017px) {
+    .pricing__list {
+        justify-content: flex-start;
+        max-width: 772px;
+        margin: 0 auto;
+    }
+    .pricing__item {
+        max-width: 386px;
+    }
+    .pricing__item-descr {
+        padding: 22px 50px 36px;
+    }
+    .pricing__item:hover {
+        margin-top: 35px;
+        border: 1px solid rgba(221, 221, 221, 0.5);
+    }
+    .pricing__item:hover .pricing__item-title {
+        padding: 24px 0 28px;
+    }
+    .pricing__item:first-child,
+    .pricing__item:nth-child(2) {
+        margin-top: 0;
     }
 }
 @media all and (max-width: 959px) {
@@ -1034,16 +1069,16 @@ footer {
     }
 }
 @media all and (max-width: 896px) {
-    .services__item:first-child {
-        margin-right: 30px;
-    }
-    .services__item:nth-child(3) {
-        margin-right: 30px;
-        margin-top: 15px;
-    }
-    .services__item:nth-child(2) {
-        margin-right: 0;
-    }
+    /*.services__item:first-child {*/
+        /*margin-right: 30px;*/
+    /*}*/
+    /*.services__item:nth-child(3) {*/
+        /*margin-right: 30px;*/
+        /*margin-top: 15px;*/
+    /*}*/
+    /*.services__item:nth-child(2) {*/
+        /*margin-right: 0;*/
+    /*}*/
     .brand-nokia {
         display: none;
     }
@@ -1063,6 +1098,14 @@ footer {
         width: 100%;
     }
 
+}
+@media all and (max-width: 830px) {
+    .pricing__list {
+        max-width: 386px;
+    }
+    .pricing__item:nth-child(2) {
+        margin-top: 35px;
+    }
 }
 @media all and (max-width: 768px) {
     .works__wrap {
@@ -1091,6 +1134,9 @@ footer {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    .section__name {
+        margin-bottom: 60px;
+    }
     .top-nav {
         width: 100%;
     }
@@ -1114,21 +1160,10 @@ footer {
     .works__item:nth-child(10) {
         display: none;
     }
-    .brands__items {
-        flex-wrap: wrap;
-        justify-content: center;
+    .brands {
+        display: none;
     }
-    .brand-nokia {
-        display: block;
-        align-self: flex-end;
-    }
-    .brands__item {
-        margin-right: 30px;
-    }
-    .brands__item:last-child,
-    .brands__item:nth-child(4){
-        margin-top: 15px;
-    }
+
     .contacts__submit-form {
         padding: 50px 15px;
     }
