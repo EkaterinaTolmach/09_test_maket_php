@@ -450,15 +450,15 @@
                 <form class="submit-form" action="#" method="post">
                     <div class="submit-form__box">
                         <label class="submit-form__label" for="name-field">Name</label>
-                        <input id="name-field" class="submit-form__field" type="text" name="user_name">
+                        <input id="name-field" class="submit-form__field" type="text" name="user_name" pattern="[A-Za-zА-Яа-яЁё]{6,15}" minlength="6" maxlength="15" title="Имя не должно содержать цифры" required>
                     </div>
                     <div class="submit-form__box">
                         <label class="submit-form__label" for="email-field">Email</label>
-                        <input id="email-field" class="submit-form__field" type="email" name="user_email">
+                        <input id="email-field" class="submit-form__field" type="email" name="user_email" required>
                     </div>
                     <div class="submit-form__box">
                         <label class="submit-form__label" for="phone-field">Phone</label>
-                        <input id="phone-field" class="submit-form__field" type="tel" name="user_phone">
+                        <input id="phone-field" class="submit-form__field" type="tel" name="user_phone" pattern="[\+]\d{11}" minlength="12" maxlength="12" title="Телефон должен быть в формате +71234567891">
                     </div>
                     <div class="submit-form__box submit-form__box--textarea">
                         <label class="submit-form__label submit-form__label--textarea" for="message-field">Message</label>

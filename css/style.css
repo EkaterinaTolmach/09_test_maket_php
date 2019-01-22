@@ -860,6 +860,7 @@ footer {
     border-radius: 3px;
     transition: border 0.1s linear;
     color: rgba(242, 242, 242, 1);
+    padding: 5px;
 }
 .submit-form__label--textarea {
     align-self: flex-start;
