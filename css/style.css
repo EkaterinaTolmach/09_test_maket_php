@@ -759,7 +759,7 @@ footer {
     padding: 24px 0 28px;
     font-family: "Montserrat", arial, sans-serif;
     text-align: center;
-    /*transition: padding 0.2s linear;*/
+
 }
 .pricing__item-name {
     color: #485563;
@@ -802,6 +802,7 @@ footer {
 }
 .pricing__item:hover .pricing__item-title {
     padding: 54px 0 28px;
+    transition: padding 0.2s linear;
 }
 .pricing__item:hover .pricing__item-title .pricing__item-name,
 .pricing__item:hover .pricing__item-title .pricing__item-price {
@@ -899,7 +900,7 @@ footer {
     flex-wrap: wrap;
 }
 .footer__site-info {
-    max-width: 330px;
+    width: 330px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -918,7 +919,7 @@ footer {
     letter-spacing: -0.35px;
 }
 .footer__socials {
-    max-width: 275px;
+    width: 275px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1109,6 +1110,12 @@ footer {
     .footer__wrap {
         padding: 25px 15px;
     }
+    .footer__site-info {
+        width: 220px;
+    }
+    .footer__socials {
+        width: 174px;
+    }
     .footer__socials-sign {
         display: none;
     }
@@ -1175,6 +1182,9 @@ footer {
     .brands__item:nth-child(3) {
         margin-right: 0;
     }
+    .footer__site-info {
+        width: 110px;
+    }
     .footer__copy span {
         display: none;
     }
@@ -1204,6 +1214,9 @@ footer {
     .footer__wrap {
         display: block;
     }
+    .footer__site-info {
+        margin: 0 auto;
+    }
     .footer__logo {
         margin: 0 auto;
     }
@@ -1212,7 +1225,7 @@ footer {
         text-align: center;
     }
     .footer__socials {
-        max-width: 100%;
+        width: 100%;
     }
     .footer__socials-items {
         margin: 0 auto;
