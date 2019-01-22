@@ -187,6 +187,7 @@ footer {
     padding: 31px 0;
 }
 .header__nav {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -203,7 +204,7 @@ footer {
     background: url("../img/logo.png") center center no-repeat;
 }
 .header__menu {
-    position: relative;
+    /*position: relative;*/
 }
 .header__menu-name {
     display: inline-block;
@@ -219,7 +220,7 @@ footer {
     display: inline-block;
     position: relative;
     width: 21px;
-    height: 15px;
+    height: 16px;
     cursor: pointer;
     vertical-align: middle;
 }
@@ -236,7 +237,7 @@ footer {
 }
 .burger__line:nth-child(2),
 .burger__line:nth-child(3) {
-    top: 42%;
+    top: 43%;
     /*transition: 0.2s;*/
 }
 .burger__line:last-child {
@@ -273,7 +274,7 @@ footer {
     /*display: none;*/
     position: absolute;
     right: 0;
-    top: 25px;
+    top: 32px;
     background-color: #485563;
     width: 200px;
     border-radius: 3px;
@@ -898,7 +899,7 @@ footer {
     flex-wrap: wrap;
 }
 .footer__site-info {
-    width: 330px;
+    max-width: 330px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -917,7 +918,7 @@ footer {
     letter-spacing: -0.35px;
 }
 .footer__socials {
-    width: 275px;
+    max-width: 275px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1105,6 +1106,18 @@ footer {
     .contacts__submit-form {
         padding: 50px 15px;
     }
+    .footer__wrap {
+        padding: 25px 15px;
+    }
+    .footer__socials-sign {
+        display: none;
+    }
+    .footer__site-info {
+        display: block;
+    }
+    .footer__copy {
+        margin-top: 15px;
+    }
 }
 @media all and (max-width: 597px) {
     .our-team__list {
@@ -1121,6 +1134,7 @@ footer {
     .our-team__full-link {
         margin-top: 50px;
     }
+
 }
 @media all and (max-width: 504px) {
     .brands__item:nth-child(3){
@@ -1128,18 +1142,6 @@ footer {
     }
     .brand-nokia {
         display: none;
-    }
-}
-@media all and (max-width: 400px) {
-    .submit-form__box {
-        display: block;
-        margin-bottom: 10px;
-    }
-    .submit-form__label {
-        display: block;
-    }
-    .submit-form__field {
-        width: 100%;
     }
 }
 @media all and (max-width: 480px) {
@@ -1172,5 +1174,47 @@ footer {
     }
     .brands__item:nth-child(3) {
         margin-right: 0;
+    }
+    .footer__copy span {
+        display: none;
+    }
+}
+@media all and (max-width: 400px) {
+    .submit-form__box {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .submit-form__label {
+        display: block;
+    }
+    .submit-form__field {
+        width: 100%;
+    }
+}
+@media all and (max-width: 320px) {
+    .top-nav {
+        width: 100%;
+    }
+    .works__more-btn {
+        width: 200px;
+    }
+    .header__link {
+        width: 200px;
+    }
+    .footer__wrap {
+        display: block;
+    }
+    .footer__logo {
+        margin: 0 auto;
+    }
+    .footer__copy {
+        margin: 15px auto;
+        text-align: center;
+    }
+    .footer__socials {
+        max-width: 100%;
+    }
+    .footer__socials-items {
+        margin: 0 auto;
     }
 }
